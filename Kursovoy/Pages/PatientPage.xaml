@@ -1,0 +1,87 @@
+﻿<Page x:Class="Kursovoy.Pages.PatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kursovoy.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Пациенты" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ComboBox Width="240" Height="24" Name="ComboSortBy" SelectionChanged="ComboSortBy_SelectionChanged">
+                <ComboBoxItem Content="По дате рождения по возрастанию"></ComboBoxItem>
+                <ComboBoxItem Content="По дате рождения по убыванию"></ComboBoxItem>
+                <ComboBoxItem Content="По фамилии"></ComboBoxItem>
+            </ComboBox>
+
+            <Label Content="Поиск по фамилии:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearch" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearch_TextChanged"></TextBox>
+
+            <Label Content="Поиск по имени:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearchName" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchName_TextChanged"></TextBox>
+
+            <Label Content="Поиск по отчеству:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearchPatronymic" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchPatronymic_TextChanged"></TextBox>
+        </StackPanel>
+        
+            <DataGrid Grid.Row="1" Name="DGridPatient" AutoGenerateColumns="False" IsReadOnly="True">
+                
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Имя}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Отчество}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пол" Binding="{Binding Пол}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата Рождения" Binding="{Binding Дата_рождения, StringFormat=dd.mm.yyyy}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Область Прописки" Binding="{Binding Область_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Район Прописки" Binding="{Binding Район_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Город Прописки" Binding="{Binding Город_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Улица Прописки" Binding="{Binding Улица_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дом Прописки" Binding="{Binding Дом_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер квартиры прописки" Binding="{Binding Номер_квартиры_прописки}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер телефона" Binding="{Binding Номер_телефона}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Номер участка" Binding="{Binding Номер_участка}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Место работы" Binding="{Binding Место_работы}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="СНИЛС" Binding="{Binding СНИЛС}" Width="*"></DataGridTextColumn>
+
+                <DataGridTemplateColumn Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BtnEditPatient" Click="BtnEditPatientClick" Visibility="{Binding AdminControlsVisibility}" Content="Редактировать" Width="120"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BtnDelPatient" Click="BtnDelPatientClick" Visibility="{Binding AdminControlsVisibility}" Content="Удалить пациента" Width="120"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+     
+            </DataGrid>
+
+
+        <Button Grid.Row="3" HorizontalAlignment="Right" Background="LightBlue" Width="200" Height="40" Margin="0,0,5,0"
+                Name="BtnAddPatient" Click="BtnAddPatientClick" Content="Добавить пациента">
+        </Button>
+        
+
+
+    </Grid>
+</Page>

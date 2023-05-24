@@ -1,0 +1,90 @@
+﻿<Page x:Class="Kursovoy.Pages.ReceptionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kursovoy.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Приёмы пациентов" Loaded="Page_Loaded">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ComboBox Width="240" Height="24" Name="ComboSortBy" SelectionChanged="ComboSortBy_SelectionChanged">
+                <ComboBoxItem Content="По дате рождения по возрастанию"></ComboBoxItem>
+                <ComboBoxItem Content="По дате рождения по убыванию"></ComboBoxItem>
+                <ComboBoxItem Content="По фамилии"></ComboBoxItem>
+            </ComboBox>
+
+            <Label Content="Поиск по фамилии:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearch" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearch_TextChanged"></TextBox>
+
+            <Label Content="Поиск по имени:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearchName" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchName_TextChanged"></TextBox>
+
+            <Label Content="Поиск по отчеству:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearchPatronymic" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchPatronymic_TextChanged"></TextBox>
+
+            <Label Content="Поиск по препарату:" Margin="20,0,0,0"></Label>
+
+            <TextBox Name="TBoxSearchPreparat" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchPreparat_TextChanged"></TextBox>
+
+            <Label Content="Поиск по дате рождения:" Margin="20,0,0,0"></Label>
+
+            <DatePickerTextBox BorderBrush="LightBlue" BorderThickness="1" Name="TBoxSearchData" Width="150" Height="24" Margin="0,0,0,0" 
+                     TextChanged="TBoxSearchData_TextChanged"></DatePickerTextBox>
+        </StackPanel>
+
+
+        <DataGrid Grid.Row="1" Name="DGridReception" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер приёма" Binding="{Binding Номер_приёма}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата приёма" Binding="{Binding Дата_приёма, StringFormat=dd.mm.yyyy}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия пациента" Binding="{Binding Пациент.Фамилия}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя пациента" Binding="{Binding Пациент.Имя}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество пациента" Binding="{Binding Пациент.Отчество}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата рождения пациента" Binding="{Binding Пациент.Дата_рождения, StringFormat=dd.mm.yyyy}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название препарата" Binding="{Binding Препарат.Название}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия сотрудника" Binding="{Binding Сотрудник.Фамилия}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя сотрудника" Binding="{Binding Сотрудник.Имя}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество сотрудника" Binding="{Binding Сотрудник.Отчество}" Width="*"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BtnEditPriem" Click="BtnEditPriemClick" Content="Редактировать" Width="120"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button  Name="BtnDelPriem" Click="BtnDelPriemClick" Content="Удалить Приём" Width="120"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="3" HorizontalAlignment="Right" Background="LightBlue" Width="200" Height="40" Margin="0,0,5,0"
+                Name="BtnAddPriem" Click="BtnAddPriemClick" Content="Добавить приём">
+        </Button>
+        
+        
+    </Grid>
+</Page>

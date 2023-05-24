@@ -1,0 +1,104 @@
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.AssemblyReference.cache
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.SuggestedBindingRedirects.cache
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\App.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_Content.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.cache
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.lref
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe.config
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.pdb
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.dll
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.dll
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.xml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.xml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\bin\Debug\ru\EntityFramework.resources.dll
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\App.baml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.baml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.g.resources
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.Properties.Resources.resources
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.GenerateResource.cache
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CoreCompileInputs.cache
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CopyComplete
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.exe
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.pdb
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.baml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.baml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.baml
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.g.cs
+D:\Рабочий стол\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.baml
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe.config
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.pdb
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.dll
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.dll
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.xml
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.xml
+E:\РПМ\Kursovoy\Kursovoy\bin\Debug\ru\EntityFramework.resources.dll
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.AssemblyReference.cache
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.SuggestedBindingRedirects.cache
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\App.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_Content.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.cache
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.lref
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\App.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.g.resources
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.Properties.Resources.resources
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.GenerateResource.cache
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CoreCompileInputs.cache
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CopyComplete
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.exe
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.pdb
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe.config
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.exe
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\Kursovoy.pdb
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.dll
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.dll
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.xml
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\EntityFramework.SqlServer.xml
+D:\РПМ\Kursovoy\Kursovoy\bin\Debug\ru\EntityFramework.resources.dll
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.AssemblyReference.cache
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.SuggestedBindingRedirects.cache
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\App.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_Content.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.cache
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy_MarkupCompile.lref
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\App.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\MainWindow.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditPatientPage.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\LoginPage.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\NavigationPage.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\PatientPage.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.g.resources
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.Properties.Resources.resources
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.GenerateResource.cache
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CoreCompileInputs.cache
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.csproj.CopyComplete
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.exe
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Kursovoy.pdb
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\ReceptionPage.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\ReceptionPage.baml
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditReception.g.cs
+E:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditReception.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditReception.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\ReceptionPage.g.cs
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\AddEditReception.baml
+D:\РПМ\Kursovoy\Kursovoy\obj\Debug\Pages\ReceptionPage.baml

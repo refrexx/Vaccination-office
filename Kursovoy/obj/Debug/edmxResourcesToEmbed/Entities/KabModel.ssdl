@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище KabModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Roled" Type="int" />
+  </EntityType>
+  <EntityType Name="Должность">
+    <Key>
+      <PropertyRef Name="Код_должности" />
+    </Key>
+    <Property Name="Код_должности" Type="int" Nullable="false" />
+    <Property Name="Должность" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="История_добавления_пациентов">
+    <Key>
+      <PropertyRef Name="Код_пациента" />
+    </Key>
+    <Property Name="Код_пациента" Type="int" Nullable="false" />
+    <Property Name="Дата_добавления" Type="date" />
+  </EntityType>
+  <EntityType Name="История_добавления_сотрудников">
+    <Key>
+      <PropertyRef Name="Код_сотрудника" />
+    </Key>
+    <Property Name="Код_сотрудника" Type="int" Nullable="false" />
+    <Property Name="Дата_добавления" Type="date" />
+  </EntityType>
+  <EntityType Name="Пациент">
+    <Key>
+      <PropertyRef Name="Код_пациента" />
+    </Key>
+    <Property Name="Код_пациента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="20" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="20" />
+    <Property Name="Отчество" Type="nvarchar" MaxLength="20" />
+    <Property Name="Дата_рождения" Type="date" />
+    <Property Name="Номер_участка" Type="int" />
+    <Property Name="Номер_страхового_полиса" Type="varchar" MaxLength="50" />
+    <Property Name="Пол" Type="nvarchar" MaxLength="1" />
+    <Property Name="Номер_телефона" Type="varchar" MaxLength="16" />
+    <Property Name="Область_прописки" Type="nvarchar" MaxLength="30" />
+    <Property Name="Район_прописки" Type="nvarchar" MaxLength="30" />
+    <Property Name="Город_прописки" Type="nvarchar" MaxLength="30" />
+    <Property Name="Улица_прописки" Type="nvarchar" MaxLength="30" />
+    <Property Name="Дом_прописки" Type="int" />
+    <Property Name="Номер_квартиры_прописки" Type="int" />
+    <Property Name="СНИЛС" Type="varchar" MaxLength="30" />
+    <Property Name="Место_работы" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Препарат">
+    <Key>
+      <PropertyRef Name="Код_препарата" />
+    </Key>
+    <Property Name="Код_препарата" Type="int" Nullable="false" />
+    <Property Name="Название" Type="nvarchar" MaxLength="40" />
+    <Property Name="Дозировка" Type="float" />
+    <Property Name="Ед_измерения_дозировки" Type="nvarchar" MaxLength="10" />
+    <Property Name="Форма_выпуска" Type="nvarchar" MaxLength="50" />
+    <Property Name="Срок_годности" Type="date" />
+    <Property Name="Серия" Type="nvarchar" MaxLength="40" />
+    <Property Name="Код_производителя" Type="int" />
+  </EntityType>
+  <EntityType Name="Прием_пациента">
+    <Key>
+      <PropertyRef Name="Номер_приёма" />
+    </Key>
+    <Property Name="Номер_приёма" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Код_пациента" Type="int" Nullable="false" />
+    <Property Name="Код_препарата" Type="int" Nullable="false" />
+    <Property Name="Код_сотрудника" Type="int" Nullable="false" />
+    <Property Name="Дата_приёма" Type="date" />
+  </EntityType>
+  <EntityType Name="Производитель">
+    <Key>
+      <PropertyRef Name="Код_производителя" />
+    </Key>
+    <Property Name="Код_производителя" Type="int" Nullable="false" />
+    <Property Name="Название_производителя" Type="nvarchar" MaxLength="30" />
+    <Property Name="Имя_представителя" Type="nvarchar" MaxLength="20" />
+    <Property Name="Фамилия_представителя" Type="nvarchar" MaxLength="20" />
+    <Property Name="Отчество_представителя" Type="nvarchar" MaxLength="20" />
+    <Property Name="Номер_телефона_представителя" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="Сотрудник">
+    <Key>
+      <PropertyRef Name="Код_сотрудника" />
+    </Key>
+    <Property Name="Код_сотрудника" Type="int" Nullable="false" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="20" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="20" />
+    <Property Name="Отчество" Type="nvarchar" MaxLength="20" />
+    <Property Name="Код_должности" Type="int" />
+  </EntityType>
+  <EntityType Name="Участковый_врач">
+    <Key>
+      <PropertyRef Name="Код_участкового_врача" />
+    </Key>
+    <Property Name="Код_участкового_врача" Type="int" Nullable="false" />
+    <Property Name="Имя" Type="nvarchar" MaxLength="30" />
+    <Property Name="Фамилия" Type="nvarchar" MaxLength="30" />
+    <Property Name="Отчество" Type="nvarchar" MaxLength="30" />
+    <Property Name="Номер_телефона" Type="varchar" MaxLength="16" />
+  </EntityType>
+  <EntityType Name="Участок">
+    <Key>
+      <PropertyRef Name="Номер_участка" />
+    </Key>
+    <Property Name="Номер_участка" Type="int" Nullable="false" />
+    <Property Name="Код_участкового_врача" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Roled" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Пациент_Участок">
+    <End Role="Участок" Type="Self.Участок" Multiplicity="0..1" />
+    <End Role="Пациент" Type="Self.Пациент" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Участок">
+        <PropertyRef Name="Номер_участка" />
+      </Principal>
+      <Dependent Role="Пациент">
+        <PropertyRef Name="Номер_участка" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Препарат_Производитель">
+    <End Role="Производитель" Type="Self.Производитель" Multiplicity="0..1" />
+    <End Role="Препарат" Type="Self.Препарат" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Производитель">
+        <PropertyRef Name="Код_производителя" />
+      </Principal>
+      <Dependent Role="Препарат">
+        <PropertyRef Name="Код_производителя" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Прием_пациента_Пациент">
+    <End Role="Пациент" Type="Self.Пациент" Multiplicity="1" />
+    <End Role="Прием_пациента" Type="Self.Прием_пациента" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Пациент">
+        <PropertyRef Name="Код_пациента" />
+      </Principal>
+      <Dependent Role="Прием_пациента">
+        <PropertyRef Name="Код_пациента" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Прием_пациента_Препарат1">
+    <End Role="Препарат" Type="Self.Препарат" Multiplicity="1" />
+    <End Role="Прием_пациента" Type="Self.Прием_пациента" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Препарат">
+        <PropertyRef Name="Код_препарата" />
+      </Principal>
+      <Dependent Role="Прием_пациента">
+        <PropertyRef Name="Код_препарата" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Прием_пациента_Сотрудник">
+    <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="1" />
+    <End Role="Прием_пациента" Type="Self.Прием_пациента" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Сотрудник">
+        <PropertyRef Name="Код_сотрудника" />
+      </Principal>
+      <Dependent Role="Прием_пациента">
+        <PropertyRef Name="Код_сотрудника" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Сотрудник_Должность">
+    <End Role="Должность" Type="Self.Должность" Multiplicity="0..1" />
+    <End Role="Сотрудник" Type="Self.Сотрудник" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Должность">
+        <PropertyRef Name="Код_должности" />
+      </Principal>
+      <Dependent Role="Сотрудник">
+        <PropertyRef Name="Код_должности" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Участок_Участковый_врач">
+    <End Role="Участковый_врач" Type="Self.Участковый_врач" Multiplicity="1" />
+    <End Role="Участок" Type="Self.Участок" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Участковый_врач">
+        <PropertyRef Name="Код_участкового_врача" />
+      </Principal>
+      <Dependent Role="Участок">
+        <PropertyRef Name="Код_участкового_врача" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище KabModelContainer">
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Должность" EntityType="Self.Должность" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="История_добавления_пациентов" EntityType="Self.История_добавления_пациентов" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="История_добавления_сотрудников" EntityType="Self.История_добавления_сотрудников" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Пациент" EntityType="Self.Пациент" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Препарат" EntityType="Self.Препарат" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Прием_пациента" EntityType="Self.Прием_пациента" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Производитель" EntityType="Self.Производитель" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Сотрудник" EntityType="Self.Сотрудник" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Участковый_врач" EntityType="Self.Участковый_врач" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Участок" EntityType="Self.Участок" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Пациент_Участок" Association="Self.FK_Пациент_Участок">
+      <End Role="Участок" EntitySet="Участок" />
+      <End Role="Пациент" EntitySet="Пациент" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Препарат_Производитель" Association="Self.FK_Препарат_Производитель">
+      <End Role="Производитель" EntitySet="Производитель" />
+      <End Role="Препарат" EntitySet="Препарат" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Прием_пациента_Пациент" Association="Self.FK_Прием_пациента_Пациент">
+      <End Role="Пациент" EntitySet="Пациент" />
+      <End Role="Прием_пациента" EntitySet="Прием_пациента" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Прием_пациента_Препарат1" Association="Self.FK_Прием_пациента_Препарат1">
+      <End Role="Препарат" EntitySet="Препарат" />
+      <End Role="Прием_пациента" EntitySet="Прием_пациента" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Прием_пациента_Сотрудник" Association="Self.FK_Прием_пациента_Сотрудник">
+      <End Role="Сотрудник" EntitySet="Сотрудник" />
+      <End Role="Прием_пациента" EntitySet="Прием_пациента" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Сотрудник_Должность" Association="Self.FK_Сотрудник_Должность">
+      <End Role="Должность" EntitySet="Должность" />
+      <End Role="Сотрудник" EntitySet="Сотрудник" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Участок_Участковый_врач" Association="Self.FK_Участок_Участковый_врач">
+      <End Role="Участковый_врач" EntitySet="Участковый_врач" />
+      <End Role="Участок" EntitySet="Участок" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
